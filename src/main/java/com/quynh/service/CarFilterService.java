@@ -59,6 +59,7 @@ public class CarFilterService {
             cars = objectMapper.readValue(new File("cars.json"), Cars.class);
         } catch (IOException e) {
             logger.error("Failed to read cars input file", e);
+            // TODO: Throw a CarFilterServiceException instead.
             throw e;
         }
     }
@@ -71,7 +72,7 @@ public class CarFilterService {
     public Cars filterByCarColour(String colour) {
         Cars matches = new Cars();
 
-        for (Car car : cars.getCars()) {
+        for (Car car : cars.getCarList()) {
             if (car.getColour().equalsIgnoreCase(colour)) {
                 matches.add(car);
             }

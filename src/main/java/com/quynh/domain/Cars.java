@@ -1,6 +1,9 @@
 package com.quynh.domain;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Class to store a collection of cars
@@ -9,21 +12,22 @@ public class Cars {
     /**
      * A collection of cars
      */
-    private ArrayList<Car> cars = new ArrayList<Car>();
+    @JsonProperty("cars")
+    private List<Car> carList = new ArrayList<>();
 
     /**
      * @return Collection of cars stored in this class
      */
-    public ArrayList<Car> getCars() {
-        return cars;
+    public List<Car> getCarList() {
+        return carList;
     }
 
     /**
-     * Sets the cars member to the given collection of cars
-     * @param cars The collection of cars to store
+     * Sets the carList member to the given collection of cars
+     * @param carList The collection of cars to store
      */
-    public void setCars(ArrayList<Car> cars) {
-        this.cars = cars;
+    public void setCarList(List<Car> carList) {
+        this.carList = carList;
     }
 
     /**
@@ -31,7 +35,7 @@ public class Cars {
      * @param car The car to store
      */
     public void add(Car car) {
-        this.cars.add(car);
+        this.carList.add(car);
     }
 
     /**
@@ -39,7 +43,7 @@ public class Cars {
      */
     @Override
     public String toString() {
-        return cars.toString();
+        return carList.toString();
     }
 
     /**
@@ -55,9 +59,11 @@ public class Cars {
 
         if (obj instanceof Cars) { // Same type
             Cars otherCars = (Cars) obj;
-            return cars.equals(otherCars.getCars());
+            return carList.equals(otherCars.getCarList());
         }
 
         return false;
     }
+
+    //TODO: Override hashCode()
 }
