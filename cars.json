@@ -1,0 +1,74 @@
+{
+    "cars": [
+        {
+            "brand": "ford",
+            "model": "fiesta",
+            "fuel": "petrol",
+            "doors": 5,
+            "colour": "blue"
+        },
+        {
+            "brand": "vauxhall",
+            "model": "corsa",
+            "fuel": "petrol",
+            "doors": 3,
+            "colour": "red"
+        },
+        {
+            "brand": "volkswagen",
+            "model": "golf",
+            "fuel": "diesel",
+            "doors": 5,
+            "colour": "black"
+        },
+        {
+            "brand": "volkswagen",
+            "model": "polo",
+            "fuel": "petrol",
+            "doors": 3,
+            "colour": "silver"
+        },
+        {
+            "brand": "ford",
+            "model": "focus",
+            "fuel": "diesel",
+            "doors": 5,
+            "colour": "blue"
+        },
+        {
+            "brand": "renault",
+            "model": "clio",
+            "fuel": "diesel",
+            "doors": 3,
+            "colour": "black"
+        },
+        {
+            "brand": "renault",
+            "model": "megane",
+            "fuel": "petrol",
+            "doors": 5,
+            "colour": "white"
+        },
+        {
+            "brand": "peugeot",
+            "model": "207",
+            "fuel": "petrol",
+            "doors": 3,
+            "colour": "blue"
+        },
+        {
+            "brand": "honda",
+            "model": "civic",
+            "fuel": "diesel",
+            "doors": 5,
+            "colour": "blue"
+        },
+        {
+            "brand": "toyota",
+            "model": "yaris",
+            "fuel": "petrol",
+            "doors": 3,
+            "colour": "black"
+        }
+    ]
+}
