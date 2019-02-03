@@ -5,6 +5,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.ArrayList;
 import java.util.List;
 
+import static java.util.Objects.hash;
+
 /**
  * Class to store a collection of cars
  */
@@ -65,5 +67,8 @@ public class Cars {
         return false;
     }
 
-    //TODO: Override hashCode()
+    @Override
+    public int hashCode() {
+        return hash(carList);
+    }
 }

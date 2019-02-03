@@ -1,5 +1,7 @@
 package com.quynh.domain;
 
+import static java.util.Objects.hash;
+
 /**
  * Car class
  */
@@ -140,5 +142,10 @@ public class Car {
         }
 
         return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return hash(brand, model, fuel, doors, colour);
     }
 }
