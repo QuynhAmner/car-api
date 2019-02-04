@@ -24,3 +24,4 @@
 /.nb-gradle/
 /build/
 run_sonarcloud.bat
+run_sonarcloud.log

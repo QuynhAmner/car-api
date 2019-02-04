@@ -10,9 +10,9 @@
 	</parent>
 	<groupId>com.quynh</groupId>
 	<artifactId>car-api</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>car-api</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Service for filtering cars based on colour</description>
 
 	<properties>
 		<java.version>1.8</java.version>

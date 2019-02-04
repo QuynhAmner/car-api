@@ -1,4 +1,4 @@
-package com.quynh.exception;
+package com.quynh.exceptions;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -18,7 +18,7 @@ public class CarFilterExceptionHandler
     extends ResponseEntityExceptionHandler {
 
     /**
-     * Constraint violation exception handlers
+     * Constraint violation exceptions handlers
      * @param ex Exception details
      * @param request HTTP request details
      * @return HTTP response of 400 bad request

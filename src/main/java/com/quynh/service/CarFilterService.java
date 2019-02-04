@@ -55,13 +55,8 @@ public class CarFilterService {
      * @throws IOException Thrown if there are problems whilst parsing the JSON file
      */
     private void parseJsonFile() throws IOException {
-        try {
-            cars = objectMapper.readValue(new File("cars.json"), Cars.class);
-        } catch (IOException e) {
-            logger.error("Failed to read cars input file", e);
-            // TODO: Throw a CarFilterServiceException instead.
-            throw e;
-        }
+        cars = objectMapper.readValue(new File("cars.json"), Cars.class);
+        logger.info("Loaded input data from cars.json");
     }
 
     /**
