@@ -1,7 +1,6 @@
 package com.quynh.domain;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -67,6 +66,10 @@ public class Cars {
         return false;
     }
 
+    /**
+     * Calculates the hash of this instance
+     * @return Hash of the car list member
+     */
     @Override
     public int hashCode() {
         return hash(carList);

@@ -144,6 +144,10 @@ public class Car {
         return false;
     }
 
+    /**
+     * Calculates the hash for this instance
+     * @return Hash of the member values
+     */
     @Override
     public int hashCode() {
         return hash(brand, model, fuel, doors, colour);
